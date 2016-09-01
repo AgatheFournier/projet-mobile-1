@@ -44,7 +44,7 @@ public class ArtistesSortActivity extends AppCompatActivity {
         spinner = (Spinner) findViewById(R.id.monSpinner1);
 
         String[] str = {"", "AC/DC", "Fat_Freddy", "Guns_N_Roses", "Jamiroquai", "Lenny_Kravitz", "The_Pixies", "The_Wolves"};
-        spinner.setPrompt("Set Text") nullPointerException (int x=0);
+        spinner.setPrompt("Set Text");
         ArrayAdapter<String> list = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, str);
         spinner.setAdapter(list);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
