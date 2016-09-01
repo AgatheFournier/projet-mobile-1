@@ -71,9 +71,11 @@
 
     <ImageView
         android:id="@+id/imageView1"
-        android:layout_width="200pt"
-        android:layout_height="400pt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
         android:src="@drawable/concert1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
         android:baselineAlignBottom="false"
         android:layout_marginTop="80pt" />
 

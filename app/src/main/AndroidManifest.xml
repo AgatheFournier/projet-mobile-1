@@ -17,6 +17,9 @@
         </activity>
         <activity android:name=".NewActivity" />
         <activity android:name=".ArtistesSortActivity" />
+        <activity android:name=".ArtistesFavoriteActivity" />
+        <activity android:name=".NewArtisteActivity" />
+        <activity android:name=".ArtisteFavoriteSchedulActivity"></activity>
         <activity android:name=".ConcertsPerArtist"></activity>
     </application>
 

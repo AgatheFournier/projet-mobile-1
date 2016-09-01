@@ -21,5 +21,7 @@ public class NewActivity extends AppCompatActivity {
                 this, android.R.layout.simple_expandable_list_item_1, listNamesSort);
         listView.setAdapter(adapter1);
 
+
+
     }
 }

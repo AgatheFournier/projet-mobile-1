@@ -56,6 +56,13 @@ public class Artiste {
         });
         return sortedNames;
     }
+    private static ArrayList<Artiste> favoriteArtisteSchedul = new ArrayList<Artiste>();
+
+    public static ArrayList<Artiste> getArtisteSchedul (){
+         return favoriteArtisteSchedul;
+    }
+
+
 
     public String getCity() {
         return city;

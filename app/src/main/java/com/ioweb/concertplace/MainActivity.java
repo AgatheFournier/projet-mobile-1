@@ -14,17 +14,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     ArrayList<Artiste> list ;
 
+    Bundle bundle;
+    String maValeur;
+    ListView listView;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Button buttonAllArtistes = (Button)findViewById(R.id.button5);
         buttonAllArtistes.setOnClickListener( this);
 
         Button buttonTriArtistes = (Button)findViewById(R.id.buttonArtistes);
         buttonTriArtistes.setOnClickListener((View.OnClickListener) this);
+
+        Button buttonArtistesFavori = (Button)findViewById(R.id.button4);
+        buttonArtistesFavori.setOnClickListener((View.OnClickListener) this);
+
     }
+
 
     @Override
     public void onClick(View v) {
@@ -33,12 +42,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {Intent intent = new Intent(this, NewActivity.class);
                 startActivity(intent);}
                 break;
-
+            /*case R.id.button4:
+            {Intent intentArtistesSearch = new Intent(this, ArtistesSearcheActivity.class);
+                startActivity(intentArtistesSearch);}
+                break;*/
             case R.id.buttonArtistes:
             {Intent intentArtistes = new Intent(this, ArtistesSortActivity.class);
                 startActivity(intentArtistes);}
                 break;
+            case R.id.button4:
+            {Intent intentFavori = new Intent(this, ArtistesFavoriteActivity.class);
+                startActivity(intentFavori);}
+                break;
         }
+
     }
 
     public void onClickArtists(View v) {
