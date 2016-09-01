@@ -18,6 +18,8 @@ public class Artiste {
     private String city;
     private String date;
 
+
+
     public Artiste(String city, String place, String name, String genre, String date) {
         this.city = city;
         this.place = place;

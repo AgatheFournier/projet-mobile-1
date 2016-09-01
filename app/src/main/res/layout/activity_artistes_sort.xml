@@ -18,7 +18,7 @@
         android:layout_height="30dp"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/monSpinner1"
+        android:layout_alignStart="@+id/spinner"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="55dp"
         android:text="@string/Choisissez_un_artiste2"
@@ -26,7 +26,7 @@
         android:textSize="8pt" />
 
     <Spinner
-        android:id="@+id/monSpinner1"
+        android:id="@+id/spinner"
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_marginLeft="20dp"
@@ -35,12 +35,15 @@
         android:entries="@array/array_artists"
         android:gravity="center_horizontal" />
 
+
+
+
     <Button
         android:id="@+id/choose_artist"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignStart="@+id/textView2"
-        android:layout_below="@+id/monSpinner1"
+        android:layout_below="@+id/spinner"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="10dp"
         android:background="#e01735"
@@ -52,7 +55,7 @@
         android:layout_height="30dp"
         android:layout_alignParentStart="false"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/monSpinner1"
+        android:layout_alignStart="@+id/spinner"
         android:layout_marginLeft="1dp"
         android:layout_marginTop="200dp"
         android:text="@string/Choisissez_un_lieu2"
@@ -60,7 +63,7 @@
         android:textSize="8pt" />
 
     <Spinner
-        android:id="@+id/monSpinner2"
+        android:id="@+id/spinner2"
         android:layout_width="300dp"
         android:layout_height="30dp"
         android:layout_marginLeft="20dp"
@@ -73,8 +76,8 @@
         android:id="@+id/choose_lieu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/monSpinner2"
-        android:layout_below="@+id/monSpinner2"
+        android:layout_alignStart="@+id/spinner2"
+        android:layout_below="@+id/spinner2"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="10dp"
         android:background="#e01735"
