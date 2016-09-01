@@ -16,17 +16,18 @@
         android:id="@+id/main_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recherche :"
+        android:text="Quel artiste joue en ville?"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="#184b97"
+        android:textColor="#010101"
         style="@style/Base.TextAppearance.AppCompat.Headline"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="10pt"
-        android:layout_centerHorizontal="true" />
+        android:layout_marginTop="15pt"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|italic" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="40pt"
+        android:layout_height="30pt"
         android:text="Programme (artistes A-Z)"
         android:id="@+id/button5"
         android:onClick="onClick"
@@ -34,30 +35,39 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:background="#e01735"
-        android:textColor="#fbfcfd" />
+        android:textColor="#020202"
+        android:textStyle="normal" />
 
 
 
     <Button
-        android:layout_width="93pt"
+        android:layout_width="72pt"
         android:layout_height="30pt"
         android:text="Ma recherche"
         android:id="@+id/buttonArtistes"
         android:onClick="onClick"
         android:layout_below="@+id/main_text_view"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp"
-        android:background="#74dde4" />
+        android:layout_alignParentStart="false"
+        android:layout_marginTop="20dp"
+        android:background="#e01735"
+        android:layout_marginStart="10dp"
+        android:allowUndo="true"
+        android:textStyle="normal"
+        android:layout_marginLeft="12dp" />
 
     <Button
-        android:layout_width="92pt"
+        android:layout_width="72pt"
         android:layout_height="30pt"
         android:text="Mon artiste favori"
-        android:id="@+id/button4"
+        android:id="@+id/button3"
         android:onClick="onClick"
-        android:background="#70e776"
+        android:background="#e01735"
+        android:textStyle="normal"
+        android:layout_marginLeft="40dp"
+        android:gravity="center"
         android:layout_alignTop="@+id/buttonArtistes"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="12dp" />
 
     <ImageView
         android:id="@+id/imageView1"
@@ -65,7 +75,7 @@
         android:layout_height="400pt"
         android:src="@drawable/concert1"
         android:baselineAlignBottom="false"
-        android:layout_marginTop="60pt" />
+        android:layout_marginTop="80pt" />
 
 
 

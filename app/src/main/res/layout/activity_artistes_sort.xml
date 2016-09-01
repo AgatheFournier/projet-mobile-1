@@ -3,15 +3,175 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginEnd="0dp"
+    android:background="#80f7d6f9"
+    android:backgroundTint="#f4a3c5"
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     android:paddingRight="0dp"
     android:paddingTop="0dp"
     tools:context="com.ioweb.concertplace.ArtistesSortActivity">
 
-    <ListView
-        android:id="@+id/listView2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/monSpinner1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/Choisissez_un_artiste2"
+        android:textColor="#030303"
+        android:textSize="8pt" />
+
+    <Spinner
+        android:id="@+id/monSpinner1"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="90dp"
+        android:background="#58e01735"
+        android:entries="@array/array_artists"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/choose_artist"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/monSpinner1"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#e01735"
+        android:text="@string/Choisissez_un_artiste" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/monSpinner1"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/Choisissez_un_lieu2"
+        android:textColor="#030303"
+        android:textSize="8pt" />
+
+    <Spinner
+        android:id="@+id/monSpinner2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="235dp"
+        android:background="#58e01735"
+        android:entries="@array/array_lieux"
+        android:gravity="center_horizontal" />
+
+    <Button
+        android:id="@+id/choose_lieu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/monSpinner2"
+        android:layout_below="@+id/monSpinner2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:background="#e01735"
+        android:text="@string/Choisissez_un_lieu" />
+
+    <ViewFlipper
+        android:id="@+id/view_flipper"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/rockenscene1"
+                android:layout_marginTop="340dp" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/Fest1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/nuit_fourviere1" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/Fest2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/eurockennes" />
+
+            <TextView
+                style="@style/ImageTitle"
+                android:text="@string/Fest3" />
+        </RelativeLayout>
+
+    </ViewFlipper>
+
+    <LinearLayout
+        style="@style/ButtonContainer"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@android:drawable/ic_media_play" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_media_pause" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/swipe_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/swipe_left"
+        android:layout_marginTop="450dp" />
+
+    <ImageView
+        android:id="@+id/swipe_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/swipe_right"
+        android:layout_marginTop="450dp" />
 
 </RelativeLayout>
+
